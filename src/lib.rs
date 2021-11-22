@@ -75,3 +75,7 @@ pub type ClipboardContext = nop_clipboard::NopClipboardContext; // TODO: impleme
     target_os = "emscripten"
 )))]
 pub type ClipboardContext = nop_clipboard::NopClipboardContext;
+
+#[cfg(target_os = "emscripten")]
+pub type ClipboardContext = nop_clipboard::NopClipboardContext;
+
